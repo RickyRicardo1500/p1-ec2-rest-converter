@@ -1,13 +1,11 @@
-### 📜 p1.service
-```ini
 [Unit]
 Description=CS554 Project 1 service
 After=network.target
 
 [Service]
 User=ec2-user
-WorkingDirectory=/home/ec2-user/p1-ec2-rest-service-converter
-ExecStart=/usr/bin/node /home/ec2-user/p1-ec2-rest-service-converter/server.js
+WorkingDirectory=/home/ec2-user/p1/p1-ec2-rest-service-converter
+ExecStart=/usr/bin/node /home/ec2-user/p1/p1-ec2-rest-service-converter/server.js
 Restart=always
 Environment=PORT=8080
 
