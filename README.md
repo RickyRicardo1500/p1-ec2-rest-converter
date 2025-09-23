@@ -33,6 +33,7 @@ A minimal REST API deployed on AWS EC2 that converts pounds (lbs) to kilograms (
    npm install express morgan
    ```
 12. Copy the entire command below into the bash shell
+   ```bash
    cat > server.js <<'EOF'
    const express = require('express');
    const morgan = require('morgan');
