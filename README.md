@@ -12,11 +12,12 @@ A minimal REST API deployed on AWS EC2 that converts pounds (lbs) to kilograms (
    ```bash
    ssh -i MyKeyPair.pem ec2-user@<PUBLIC_IP>
 6. Update & install Node.js
+   ```bash
    sudo yum update -y && sudo yum install -y nodejs npm
-7. mkdir -p ~/p1 && cd ~/p1
-8. npm init -y
-9. npm install express morgan
-10. Copy the entire command below into the bash shell
+8. ```bash mkdir -p ~/p1 && cd ~/p1
+9. npm init -y
+10. npm install express morgan
+11. Copy the entire command below into the bash shell
 
 cat > server.js <<'EOF'
 const express = require('express');
