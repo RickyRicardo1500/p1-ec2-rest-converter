@@ -4,8 +4,7 @@
 This project provisions an AWS EC2 instance and deploys a REST service that converts pounds (lbs) 
 to kilograms (kg). The service is accessible over HTTP through a minimal API and is managed as a 
 systemd service for reliability. Nginx is used as a reverse proxy to route external traffic on port 80 
-to the application on port 8080. The project demonstrates provisioning, deployment, security, DevOps 
-hygiene, and cleanup practices in the cloud.
+to the application on port 8080.
 
 ---
 
@@ -13,13 +12,11 @@ hygiene, and cleanup practices in the cloud.
 - Provision and secure a VM in AWS EC2.
 - Expose a minimal REST API over HTTP.
 - Run the service reliably with systemd.
-- Apply basic DevOps practices: logging, README, reproducible setup.
-- Practice cloud cost hygiene and cleanup.
 
 ---
 
 ## Technology Stack
-- **AWS EC2 (t2.micro, Ubuntu 22.04 LTS / Amazon Linux 2)**: Cloud virtual machine to host the service.
+- **AWS EC2 (t3.micro, Ubuntu 24.04 LTS / Amazon Linux 2023)**: Cloud virtual machine to host the service.
 - **Node.js + Express**: Chosen for its simplicity and speed in building REST APIs.
 - **Morgan**: Middleware for HTTP request logging.
 - **systemd**: Ensures the service runs automatically on boot and restarts on failure.
@@ -33,7 +30,7 @@ hygiene, and cleanup practices in the cloud.
 2. **Nginx** → receives request on port 80 and proxies it to `127.0.0.1:8080`
 3. **Express App (Node.js)** → processes request, performs validation, returns JSON
 4. **systemd** → keeps the service running, restarts on failure
-5. **AWS Security Group** → only allows SSH (22) and HTTP (80) from instructor/student IPs
+5. **AWS Security Group** → only allows SSH (22) and HTTP (80) from IPs
 
 ---
 
