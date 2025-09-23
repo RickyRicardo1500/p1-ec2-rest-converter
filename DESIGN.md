@@ -37,3 +37,29 @@ to the application on port 8080.
 ## API Specification
 GET /convert?lbs=<number>
 **Endpoint**
+
+### Query Parameters/Data Types
+- **lbs** (required, float)
+  - The weight in pounds to be converted.
+  - Must be:
+    - Non-negative (`lbs >= 0`)
+    - Finite (not `NaN`, `Infinity`, or `-Infinity`)
+
+### Response Format
+- **Content-Type:** `application/json`
+- Responses always follow a JSON object structure.
+
+---
+
+### Success Response
+- **Status Code:** `200 OK`
+- **Example Request:** http://<PUBLIC_IP>:8080/convert?lbs=150
+
+- **Example Response:**
+```json
+{
+  "lbs": 150,
+  "kg": 68.039,
+  "formula": "kg = lbs * 0.45359237"
+}
+
