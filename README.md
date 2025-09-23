@@ -117,34 +117,35 @@ sudo systemctl restart nginx
 sudo systemctl enable nginx
 ```
 17. Test the Cases\
-1. Happy path: /convert?lbs=0 = 0.000 kg\
-2. Typical: /convert?lbs=150 = 68.039 kg\
-3. Edge: /convert?lbs=0.1 = 0.045 kg\
-4. Error: /convert (missing param) = 400\
-5. Error: /convert?lbs=-5 = 422\
-6. Error: /convert?lbs=NaN = 400\
+- 1. Happy path: /convert?lbs=0 = 0.000 kg
+- 2. Typical: /convert?lbs=150 = 68.039 kg
+- 3. Edge: /convert?lbs=0.1 = 0.045 kg
+- 4. Error: /convert (missing param) = 400
+- 5. Error: /convert?lbs=-5 = 422
+- 6. Error: /convert?lbs=NaN = 400
 
-1.
+Run commands for test cases in shell below
+- 1.
 ```bash
 curl 'http://<PUBLIC_IP>:8080/convert?lbs=0'
 ```
-2.
+- 2.
 ```bash
 curl 'http://<PUBLIC_IP>:8080/convert?lbs=150'
 ```
-3.
+- 3.
 ```bash
 curl 'http://<PUBLIC_IP>:8080/convert?lbs=150'
 ```
-4.
+- 4.
 ```bash
 curl 'http://<PUBLIC_IP>:8080/convert?lbs=0.1'
 ```
-5.
+- 5.
 ```bash
 curl 'http://<PUBLIC_IP>:8080/convert'
 ```
-6.
+- 6.
 ```bash
 curl 'http://<PUBLIC_IP>:8080/convert?lbs=NaN'
 ```
