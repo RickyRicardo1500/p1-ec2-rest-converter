@@ -57,20 +57,20 @@ A minimal REST API deployed on AWS EC2 that converts pounds (lbs) to kilograms (
 12. Create a systemd unit
     ```bash
     sudo bash -c 'cat > /etc/systemd/system/p1.service <<"UNIT"
-[Unit]
-Description=CS554 Project 1 service
-After=network.target
-
-[Service]
-User=ec2-user
-WorkingDirectory=/home/ec2-user/p1
-ExecStart=/usr/bin/node /home/ec2-user/p1/server.js
-Restart=always
-Environment=PORT=8080
-
-[Install]
-WantedBy=multi-user.target
-UNIT'
+   [Unit]
+   Description=CS554 Project 1 service
+   After=network.target
+   
+   [Service]
+   User=ec2-user
+   WorkingDirectory=/home/ec2-user/p1
+   ExecStart=/usr/bin/node /home/ec2-user/p1/server.js
+   Restart=always
+   Environment=PORT=8080
+   
+   [Install]
+   WantedBy=multi-user.target
+   UNIT'
    ```
 
 ```bash
