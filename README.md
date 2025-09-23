@@ -45,6 +45,7 @@ A minimal REST API deployed on AWS EC2 that converts pounds (lbs) to kilograms (
    const port = process.env.PORT || 8080;
    app.listen(port, () => console.log(`listening on ${port}`));
    EOF
+   ```bash
 11. Run Node
    ```bash
    node server.js
