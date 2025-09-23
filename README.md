@@ -18,7 +18,7 @@ A minimal REST API deployed on AWS EC2 that converts pounds (lbs) to kilograms (
 8. Make then change working directory
    ```bash
    mkdir -p ~/p1 && cd ~/p1
-10. Initialize Node Package Manager
+9. Initialize Node Package Manager
    ```bash
    npm init -y
 12. Install Express & Morgan
