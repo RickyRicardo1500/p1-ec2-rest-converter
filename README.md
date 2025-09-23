@@ -14,11 +14,17 @@ A minimal REST API deployed on AWS EC2 that converts pounds (lbs) to kilograms (
 6. Update & install Node.js
    ```bash
    sudo yum update -y && sudo yum install -y nodejs npm
+   
+8. Make then change working directory
    ```bash
-8. mkdir -p ~/p1 && cd ~/p1
-9. npm init -y
-10. npm install express morgan
-11. Copy the entire command below into the bash shell
+   mkdir -p ~/p1 && cd ~/p1
+10. Initialize Node Package Manager
+   ```bash
+   npm init -y
+12. Install Express & Morgan
+   ```bash
+   npm install express morgan
+13. Copy the entire command below into the bash shell
 
 cat > server.js <<'EOF'
 const express = require('express');
