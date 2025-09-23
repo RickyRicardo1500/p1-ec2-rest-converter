@@ -72,7 +72,7 @@ A minimal REST API deployed on AWS EC2 that converts pounds (lbs) to kilograms (
    WantedBy=multi-user.target
    UNIT'
    ```
-
+13. Enable systemctl
 ```bash
 sudo systemctl daemon-reload
 ```
