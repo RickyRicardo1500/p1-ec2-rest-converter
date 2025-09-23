@@ -46,12 +46,5 @@ A minimal REST API deployed on AWS EC2 that converts pounds (lbs) to kilograms (
    app.listen(port, () => console.log(`listening on ${port}`));
    EOF
 
-
-
-
-11. Run Node
-   ```bash
-   node server.js
-12. Open your browser to http://<PUBLIC_IP>:8080/convert?lbs=150 or test with curl: curl 'http://<PUBLIC_IP>:8080/convert?lbs=150'
-   
+11.    
 
