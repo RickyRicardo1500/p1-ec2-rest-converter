@@ -34,8 +34,6 @@ to the application on port 8080.
 
 ---
 
----
-
 ## Here is the directory tree:
 ```
 DESIGN.md
