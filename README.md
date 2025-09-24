@@ -12,6 +12,8 @@ A minimal REST API deployed on AWS EC2 that converts pounds (lbs) to kilograms (
 ```bash
 ssh -i MyKeyPair.pem ec2-user@<PUBLIC_IP>
 ```
+If using Putty use insert your keypair in the auth tab then login using your <PUBLIC_IP>
+
 6. Clone Git Repo & change working directory
 ```bash
 git clone https://github.com/RickyRicardo1500/p1.git && cd p1
