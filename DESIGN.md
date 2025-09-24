@@ -34,6 +34,18 @@ to the application on port 8080.
 
 ---
 
+---
+
+## Here is the directory tree:
+```
+DESIGN.md
+README.md
+server.js
+
+
+```
+---
+
 ## API Specification
 GET /convert?lbs=<number>
 **Endpoint**
