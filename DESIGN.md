@@ -34,7 +34,7 @@ to the application on port 8080.
 
 ---
 
-## Here is the directory tree:
+## Here is the directory tree with Node.Js installed:
 ```
 DESIGN.md
 README.md
